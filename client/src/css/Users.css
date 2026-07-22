@@ -1,0 +1,66 @@
+/* Users Page */
+
+.container-fluid {
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Cards */
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+/* Form */
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Table */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .card-body .row > div {
+        margin-bottom: 15px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+}

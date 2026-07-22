@@ -1,0 +1,17 @@
+.container-fluid{
+    background:#f8f9fa;
+    min-height:100vh;
+}
+
+.card{
+    border:none;
+    border-radius:10px;
+}
+
+.card-header{
+    font-weight:bold;
+}
+
+.table{
+    margin-bottom:0;
+}
