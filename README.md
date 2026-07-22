@@ -1,51 +1,25 @@
-# YOTAP Inventory Management System
+# YOTAP-SYSTEM
 
-A web-based Inventory Management System developed using **React.js**, **PHP**, **MySQL**, and **Bootstrap 5**. The system helps manage products, categories, and users through an easy-to-use dashboard.
-
----
+A web-based **YOTAP Management System** built using **React (Vite)** for the frontend and **PHP + MySQL** for the backend. The system provides user management, product management, category management, authentication, and an admin dashboard.
 
 ## Features
 
-### Authentication
-- User Login
-- User Registration (Staff only)
-- Password Hashing
-- Show/Hide Password
-- Role-Based Access (Admin & Staff)
-
-### Dashboard
-- Dashboard Overview
-- Navigation Sidebar
-- Responsive Layout
-
-### User Management (Admin)
-- Add User
-- Update User
-- Delete User
-- Search User
-- Role Management (Admin/Staff)
-
-### Product Management
-- Add Product
-- Update Product
-- Delete Product
-- Search Product
-
-### Category Management
-- Add Category
-- Update Category
-- Delete Category
-- Search Category
-
----
+- 🔐 User Authentication (Login & Register)
+- 👤 User Management (CRUD)
+- 📦 Product Management (CRUD)
+- 🗂️ Category Management (CRUD)
+- 📊 Admin Dashboard
+- 🔍 Search Functionality
+- 🎨 Responsive User Interface
+- 🗄️ MySQL Database Integration
 
 ## Technologies Used
 
 ### Frontend
-- React.js
-- React Router DOM
+- React
+- Vite
 - Axios
-- Bootstrap 5
+- React Router
 - CSS
 
 ### Backend
@@ -53,153 +27,110 @@ A web-based Inventory Management System developed using **React.js**, **PHP**, *
 - MySQL
 - XAMPP
 
----
-
 ## Project Structure
 
 ```
-client/
+YOTAP-SYSTEM/
 │
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── css/
-│   ├── services/
-│   ├── App.jsx
-│   └── main.jsx
+├── client/                 # React Frontend
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
 │
-└── package.json
-
-server/
+├── server/
+│   ├── api/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── index.php
+│   └── package.json
 │
-├── api/
-│   ├── login.php
-│   ├── register.php
-│   ├── users.php
-│   ├── addUser.php
-│   ├── updateUser.php
-│   ├── deleteUser.php
-│   ├── products.php
-│   ├── addProduct.php
-│   ├── updateProduct.php
-│   ├── deleteProduct.php
-│   ├── categories.php
-│   ├── addCategory.php
-│   ├── updateCategory.php
-│   └── deleteCategory.php
-│
-├── config/
-│   └── Database.php
-│
-└── database/
+└── README.md
 ```
-
----
-
-## Database
-
-Create a MySQL database named:
-
-```
-yotap_system
-```
-
-### Tables
-
-- users
-- products
-- categories
-
----
 
 ## Installation
 
-### 1. Clone Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/yotap-system.git
+git clone https://github.com/castanedajohnclarence7-ai/YOTAP-SYSTEM.git
 ```
 
-### 2. Install React Dependencies
+### 2. Open the Project
+
+```bash
+cd YOTAP-SYSTEM
+```
+
+### 3. Install Frontend Dependencies
 
 ```bash
 cd client
 npm install
 ```
 
-### 3. Start React
+### 4. Start the React Application
 
 ```bash
 npm run dev
 ```
 
-### 4. Start XAMPP
-
-- Apache
-- MySQL
-
-### 5. Import Database
-
-Import the SQL file into phpMyAdmin.
-
----
-
-## Default Admin Account
-
-Username
+The frontend will run on:
 
 ```
-admin
+http://localhost:5173
 ```
 
-Password
+### 5. Configure the Backend
 
-```
-admin123
-```
+1. Copy the **server** folder into your XAMPP `htdocs` directory if necessary.
+2. Start **Apache** and **MySQL** using XAMPP.
+3. Import your MySQL database into phpMyAdmin.
+4. Update your database connection settings inside the `server/config` folder if needed.
 
-*(Change this according to your database.)*
+## Usage
 
----
+- Register a new account or log in.
+- Admin users can manage:
+  - Users
+  - Products
+  - Categories
+- View the dashboard and system data.
 
 ## Screenshots
 
-You may add screenshots here.
+You can add screenshots here.
+
+```
+docs/
+├── login.png
+├── dashboard.png
+├── users.png
+└── products.png
+```
 
 Example:
 
+```md
+![Dashboard](docs/dashboard.png)
 ```
-screenshots/
-    login.png
-    dashboard.png
-    users.png
-    products.png
-    categories.png
-```
-
----
 
 ## Future Improvements
 
-- Product Image Upload
-- Reports
-- Sales Module
-- Activity Logs
-- Export to Excel
-- Export to PDF
-- Inventory Statistics
+- User Roles and Permissions
+- Export to PDF/Excel
 - Dark Mode
+- Activity Logs
+- Notifications
 
----
+## Author
 
-## Developers
+**John Clarence Castañeda**
 
-Developed by:
-
-**YOTAP Development Team**
-
----
+GitHub:
+https://github.com/castanedajohnclarence7-ai
 
 ## License
 
-This project is intended for educational purposes.
+This project is for educational purposes.
