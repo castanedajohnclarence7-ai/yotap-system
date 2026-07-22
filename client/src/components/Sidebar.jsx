@@ -31,9 +31,6 @@ function Sidebar() {
             {user?.role === "Admin" && (
                 <Link to="/users">Users</Link>
             )}
-            {user?.role === "Admin" && (
-            <Link to="/reports">Reports</Link>
-            )}
             <Link to="/about">About</Link>
 
             <button

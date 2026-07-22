@@ -1,16 +1,136 @@
-# React + Vite
+# YOTAP-SYSTEM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based **YOTAP Management System** built using **React (Vite)** for the frontend and **PHP + MySQL** for the backend. The system provides user management, product management, category management, authentication, and an admin dashboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔐 User Authentication (Login & Register)
+- 👤 User Management (CRUD)
+- 📦 Product Management (CRUD)
+- 🗂️ Category Management (CRUD)
+- 📊 Admin Dashboard
+- 🔍 Search Functionality
+- 🎨 Responsive User Interface
+- 🗄️ MySQL Database Integration
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React
+- Vite
+- Axios
+- React Router
+- CSS
 
-## Expanding the ESLint configuration
+### Backend
+- PHP
+- MySQL
+- XAMPP
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```
+YOTAP-SYSTEM/
+│
+├── client/                 # React Frontend
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/
+│   ├── api/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── index.php
+│   └── package.json
+│
+└── README.md
+```
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/castanedajohnclarence7-ai/YOTAP-SYSTEM.git
+```
+
+### 2. Open the Project
+
+```bash
+cd YOTAP-SYSTEM
+```
+
+### 3. Install Frontend Dependencies
+
+```bash
+cd client
+npm install
+```
+
+### 4. Start the React Application
+
+```bash
+npm run dev
+```
+
+The frontend will run on:
+
+```
+http://localhost:5173
+```
+
+### 5. Configure the Backend
+
+1. Copy the **server** folder into your XAMPP `htdocs` directory if necessary.
+2. Start **Apache** and **MySQL** using XAMPP.
+3. Import your MySQL database into phpMyAdmin.
+4. Update your database connection settings inside the `server/config` folder if needed.
+
+## Usage
+
+- Register a new account or log in.
+- Admin users can manage:
+  - Users
+  - Products
+  - Categories
+- View the dashboard and system data.
+
+## Screenshots
+
+You can add screenshots here.
+
+```
+docs/
+├── login.png
+├── dashboard.png
+├── users.png
+└── products.png
+```
+
+Example:
+
+```md
+![Dashboard](docs/dashboard.png)
+```
+
+## Future Improvements
+
+- User Roles and Permissions
+- Export to PDF/Excel
+- Dark Mode
+- Activity Logs
+- Notifications
+
+## Author
+
+**John Clarence Castañeda**
+
+GitHub:
+https://github.com/castanedajohnclarence7-ai
+
+## License
+
+This project is for educational purposes.

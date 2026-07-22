@@ -6,7 +6,6 @@ import Products from "./pages/Products";
 import Categories from "./pages/Categories";
 import Users from "./pages/Users";
 import About from "./pages/About";
-import Reports from "./pages/Reports";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/users" element={<Users />} />
-        <Route path="/reports" element={<Reports />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
