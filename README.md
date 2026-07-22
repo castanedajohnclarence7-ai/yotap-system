@@ -100,21 +100,21 @@ http://localhost:5173
 
 ## Screenshots
 
-You can add screenshots here.
+### Dashboard
 
-```
-docs/
-├── login.png
-├── dashboard.png
-├── users.png
-└── products.png
-```
-
-Example:
-
-```md
 ![Dashboard](docs/dashboard.png)
-```
+
+### Users
+
+![Users](docs/users.png)
+
+### Products
+
+![Products](docs/products.png)
+
+### Categories
+
+![Categories](docs/categories.png)
 
 ## Future Improvements
 
