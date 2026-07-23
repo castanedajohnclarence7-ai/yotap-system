@@ -1,3 +1,4 @@
+// Top navigation bar
 function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-primary shadow-sm px-4">

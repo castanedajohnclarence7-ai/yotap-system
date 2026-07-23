@@ -1,3 +1,4 @@
+// Side navigation menu
 import { Link, useNavigate } from "react-router-dom";
 import "../css/Sidebar.css";
 
